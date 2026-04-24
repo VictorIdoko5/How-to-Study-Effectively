@@ -1,0 +1,242 @@
+/* RESET */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL BACKGROUND */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: url('https://images.unsplash.com/photo-1665789318391-6057c533005e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVpenxlbnwwfHwwfHx8MA%3D%3D') center/cover no-repeat;
+    color: rgb(21, 32, 133);
+}
+
+/* HEADER */
+header {
+    background: #111827;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #2563eb;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(233, 236, 241);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+   
+   /* QUIZ CONTAINER CARD */
+.quiz-card {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px yellowgreen;
+    animation: fadeIn 0.6s ease;
+}
+
+/* FULL SCREEN CENTERING */
+.quiz-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* APP CARD */
+.quiz-app {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px orange;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    transition: width 0.4s ease;
+}
+
+/* QUESTION COUNT */
+.question-count {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+/* QUESTION */
+.quiz-app h2 {
+    margin-bottom: 25px;
+}
+
+/* OPTIONS */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* OPTION CARD */
+#options1 {
+    padding: 15px;
+    border-radius: 15px;
+    border-color: #9acd32;
+    background: #f9fafb;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: left;
+}
+
+#option1:hover {
+    background: #eef2ff;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* SELECTED STATE */
+.option.selected {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+/* NEXT BUTTON */
+#nextBtn {
+    margin-top: 25px;
+    width: 100%;
+    background: blue;
+    color: white;
+    display: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#nextBtn:hover {
+    background: white;
+    color: blue;
+    transform: translateY(-2px);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* RESULT LIST */
+#resultDesc ul {
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#resultDesc li {
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+/* RESULT CARD IMPROVEMENT */
+.result-card {
+    text-align: center;
+    padding: 30px;
+    animation: fadeIn 0.6s ease;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: #9ca3af;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
+
+/* ANIMATION */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button{
+ background: white;
+    color: #2563eb;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #e0e7ff;
+    transform: translateY(-2px);
+}

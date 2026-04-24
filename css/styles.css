@@ -1,0 +1,206 @@
+/* RESET */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL BACKGROUND */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #1f2937;
+    color: rgb(21, 32, 133);
+}
+
+/* HEADER */
+header {
+    background: #111827;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #2563eb;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(233, 236, 241);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* HERO SECTION */
+#hero {
+    background: url('https://images.unsplash.com/photo-1611348586755-53860f7ae57a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVhcm58ZW58MHx8MHx8fDA%3D') center/cover no-repeat;
+    position: relative;
+    color: #2563eb;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.55);
+    padding: 90px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+#hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 5px 0;
+}
+
+/* BUTTON */
+button {
+    background: white;
+    color: #2563eb;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e0e7ff;
+    transform: translateY(-2px);
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #2563eb;
+}
+
+/* PARAGRAPHS */
+p {
+    margin-bottom: 15px;
+    color: #4b5563;
+}
+
+/* METHODS & STYLES GRID */
+#methods, #styles {
+    display: grid;
+    gap: 20px;
+}
+
+/* CARD STYLE */
+#methods h3,
+#styles h3 {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* CTA BUTTON SPACING */
+section a button {
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: #9ca3af;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
+
+/* ANIMATION */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* DARK MODE */
+.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+.dark-mode section {
+    color: #f9fafb;
+}
+
+.dark-mode header {
+    background: #1f2937;
+}
+
+.dark-mode nav a {
+    color: #e5e7eb;
+}
+
+.dark-mode footer {
+    background: #000;
+}
