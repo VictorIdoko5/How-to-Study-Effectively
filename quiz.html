@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning Style Quiz | LearnSmart</title>
+    <meta name="description" content="Take this quiz to discover your learning style and improve your study methods.">
+
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <h2>LearnSmart</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- QUIZ CONTAINER -->
+    <section class="quiz-wrapper">
+
+    <div class="quiz-app">
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <p class="question-count" id="count">Question 1 of 3</p>
+
+        <h2 id="question">Loading...</h2>
+
+        <div id="options1" class="options"></div>
+
+        <button id="nextBtn">Next</button>
+
+    </div>
+
+    <div id="result" class="quiz-app" style="display:none;">
+        <h2>Your Learning Style</h2>
+        <h1 id="resultText"></h1>
+        <p id="resultDesc"></p>
+
+        <a href="index.html"><button class="button">Back Home</button></a>
+    </div>
+
+</section>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
